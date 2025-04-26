@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a69166294d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Logo (2).png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Fullstack Developer</p>
+                <h1>Hey, I'm <span>Devatharshini</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------about section ------------  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p> This side Devatharshini, pursed BE Computer Science and Engineering from Theni Kammavar Sangam College of Technology. I specialize in front-end and back-end  technologies, ensuring seamless interactions and responsive design. My expertise lies in HTML, CSS, Basic of JavaScript, allowing me to create visually appealing and functionally robust web applications. <br> <br>
+
+                     My proficiency spans programming languages pyhton. Problem-solving and optimizing algorithms are integral parts of my approach to building reliable and high-performance software. <br> <br>
+                    
+                   
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Developer</span><br>Build responsive and interactive user interfaces using HTML, CSS, JavaScript and React.js.</li>
+                            <li><span>Version Control</span><br>Experienced with Git for code management and collaboration.</li>
+                            <li><span>Programming languages and Database</span><br>Knowledge of python,Java and MYSQL.</li>
+                            <li><span>Python libraries</span><br>PyPDF2,Scikit-learn,NumPy,Pandas,gTTS,pyttsx3,Streamlit.</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                    
+                            <li><span>Working on projects</span><br>Stroke Prediction Using Random Forest Classifier</li>
+                            <li><span>Working on projects</span><br>Online Blood Banking using PHP</li>
+                            <li><span>Foxconn India pvt ltd</span><br>Data Warehouse</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Pursed BE Computer Science and Engineering</span><br>Theni Kammavar Sangam College of Technology, Theni <br> (2021-2024)</li>
+                            <li><span>Completed Senior Secoandary School</span><br>Velammal Matriculation Higher Secondary School, Theni <br>
+                                (2020-2021)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------services---------------  -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designer</h2>
+                    <p>As a web designer, I create visually appealing and user-friendly websites by combining design principles with technical skills. I focus on creating seamless navigation, responsive layouts, and engaging aesthetics to enhance the overall user experience. Additionally, I stay updated on design trends and technologies to deliver modern and effective web solutions.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Graphic Designer</h2>
+                    <p> As a graphic designer on Canva, I craft visually compelling designs that seamlessly blend creativity and functionality. My expertise spans diverse projects, from eye-catching social media graphics to polished marketing materials, all meticulously designed to captivate and communicate effectively.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fas fa-database"></i>
+                    <h2>Data Warehouse</h2>
+                    <p> Designs, builds, and manages large-scale data storage systems to consolidate data from multiple sources, enabling efficient data retrieval and analysis. Ensures data integrity, accessibility, and optimized performance for informed business decision-making.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------projects-------------  -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Stroke Prediction using Random Forest Classifier</h3>
+                        <p> Developed a predictive model using the Random Forest algorithm to accurately assess stroke risk, providing a tool to support early intervention and prevention.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Online Blood Banking using PHP</h3>
+                        <p> Created a PHP and MySQL-based web application to manage blood donations, inventory, and distribution, ensuring efficient resource allocation and timely access to blood supplies.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <!-- -----------------contact-----------------  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fas fa-envelope"></i> tharshnideva@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i>7708323435</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/devatharshini-m"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                      
+                        
+                    </div>
+                    <a href="_Resume (2).pdf" download class="btn ">Download CV</a></div>
+                
+ 
+            
+            </div>
+        </div>
+       
+    
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
